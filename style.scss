@@ -1,0 +1,97 @@
+$colorAll : background linear-gradient(to right, #2980b9, #2c3e50);
+
+.mainText{
+    font-size: 18px;
+    text-transform: capitalize;
+    color: white;
+    font-family: system-ui;
+    margin: 8px 0;
+}
+.mainFlex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBtn{
+    padding: 14px;
+    border-radius: 25px;
+    background: transparent;
+    color: white;
+    border: 1px solid $colorAll;
+}
+.mainInpute{
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+*{
+    box-shadow: border;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+body{
+    background-color: $colorAll;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px
+}
+
+#btnSingUp{
+    @extend .mainBtn;
+}
+label{
+    @extend .mainText;
+}
+#iconProfil{
+    width: 80px;
+    height: 80px;
+}
+
+.allRow,.towTextFlex{
+    @extend .mainFlex;
+}
+.rememberMe,.forgetMyPassowrd{
+@extend .mainText;
+}
+.firstRow{
+    width: 350px;
+    background: $colorAll;
+    height: 100vh;
+    box-shadow: 0 0 10px $colorAll;
+}
+.navber{
+    padding: 15px;
+    background: cadetblue;
+    @extend .mainFlex;
+}
+span{
+    @extend .mainText;
+}
+.theLinks{
+    @extend .mainText;
+    text-decoration: none;
+    margin: 0 10px;
+}
+input{
+    @extend .mainInpute;
+}
+.welcome{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-family: system-ui;
+    color: white;
+}
+.secondRow{
+    position: relative;
+    top: 500px;
+}
+p{
+@extend .mainText;
+width: 282px;
+}
